@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Timer } from './Timer.js'
+import { Tracker } from './ProgressTracker/Tracker.js'
 
 class App extends Component {
   render() {
@@ -11,10 +12,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to The EE TIMER!</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <Timer/>
+        <br/>
+        <Tracker/>
       </div>
     );
   }
