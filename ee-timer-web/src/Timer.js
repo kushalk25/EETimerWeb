@@ -47,11 +47,11 @@ export class Timer extends Component {
 
         <button onClick={() => {
           //TODO: increase success count
-          this.setState({ currentSeconds: DEFAULT_STARTING_TIME })
+          this.setState({ currentSeconds: DEFAULT_STARTING_TIME, running: true })
         }}> Success </button>
         <button onClick={() => {
           //TODO: increase failure count
-          this.setState({ currentSeconds: DEFAULT_STARTING_TIME })
+          this.setState({ currentSeconds: DEFAULT_STARTING_TIME, running: true })
         }}> Failed </button>
       </div>
     );
