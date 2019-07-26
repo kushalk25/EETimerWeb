@@ -9,10 +9,10 @@ export class Tracker extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      start_time_hour: 7,
+      start_time_hour: 9,
       start_time_min: 30,
-      end_time_hour: 10,
-      end_time_min: 30,
+      end_time_hour: 13,
+      end_time_min: 0,
       inverval_length: THIRTY_MINUTE_INTERVAL
     };
 
@@ -67,8 +67,8 @@ export class Tracker extends Component {
           <thead>
             <tr>
               <th> Time </th>
-              <th> Fails </th>
-              <th> Successes </th>
+              <th> F </th>
+              <th> S </th>
             </tr>
           </thead>
           <tbody>
