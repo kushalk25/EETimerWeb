@@ -12,6 +12,21 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to The EE TIMER!</h1>
         </header>
+        <div>
+          <div>
+            <h2> Energy level: </h2>
+            <select name="level">
+              <option value="In The Zone">In The Zone</option>
+              <option value="high">High</option>
+              <option value="average" selected>Average</option>
+              <option value="low">Low</option>
+              <option value="tired">tired</option>
+            </select>
+          </div>
+          <h2> To Do: </h2>
+          <textarea rows="4" cols="100">
+          </textarea>
+        </div>
         <Timer/>
         <br/>
         <Tracker/>
